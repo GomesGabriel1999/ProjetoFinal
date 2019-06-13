@@ -4,12 +4,12 @@
             <thead>
                 <tr>
                     <td></td>
-                    <td>Product</td>
-                    <td>Quantity</td>
-                    <td>Cost</td>
-                    <td>Delivery Address</td>
-                    <td>is Delivered?</td>
-                    <td>Action</td>
+                    <td>Produto</td>
+                    <td>Quantidade</td>
+                    <td>Valor</td>
+                    <td>Endereço de entrega</td>
+                    <td>Foi entregue??</td>
+                    <td>Ação</td>
                 </tr>
             </thead>
             <tbody>

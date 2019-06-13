@@ -1,8 +1,8 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav style="background-color:#15a729;" class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <router-link :to="{name: 'home'}" class="navbar-brand">Big Store</router-link>
+                <router-link :to="{name: 'home'}" class="navbar-brand"><img style="width:85px;height:60px;" src="../../../../storage/img2.png"></router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -11,12 +11,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto"></ul>
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <router-link :to="{ name: 'login' }" class="nav-link" v-if="!isLoggedIn">Login</router-link>
-                        <router-link :to="{ name: 'register' }" class="nav-link" v-if="!isLoggedIn">Register</router-link>
-                        <span v-if="isLoggedIn">
-                          <router-link :to="{ name: 'userboard' }" class="nav-link" v-if="user_type == 0"> Hi, {{name}}</router-link>
-                          <router-link :to="{ name: 'admin' }" class="nav-link" v-if="user_type == 1"> Hi, {{name}}</router-link>
+                    <ul class="navbar-nav ml-auto" style="color:#eeeeee">
+                        <router-link :to="{ name: 'login' }" class="nav-link" v-if="!isLoggedIn" style="color:#eeeeee" >Login</router-link>
+                        <router-link :to="{ name: 'register' }" class="nav-link" v-if="!isLoggedIn" style="color:#eeeeee">Register</router-link>
+                        <span v-if="isLoggedIn" style="color:#eeeeee">
+                          <router-link :to="{ name: 'userboard' }" class="nav-link" v-if="user_type == 0"> Olá, {{name}}</router-link>
+                          <router-link :to="{ name: 'admin' }" class="nav-link" v-if="user_type == 1"> Olá, {{name}}</router-link>
                         </span>
                         <li class="nav-link" v-if="isLoggedIn" @click="logout"> Logout</li>
                     </ul>

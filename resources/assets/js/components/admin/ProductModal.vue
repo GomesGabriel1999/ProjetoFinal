@@ -9,9 +9,9 @@
 
         <div class="modal-body">
           <slot name="body">
-            Name: <input type="text" v-model="data.name">
-            Units: <input type="text" v-model="data.units">
-            Price: <input type="text" v-model="data.price">
+            Nome: <input type="text" v-model="data.name">
+            Quantidade: <input type="text" v-model="data.units">
+            Preço: <input type="text" v-model="data.price">
             <textarea v-model="data.description" placeholder="description"></textarea>
             <span >
               <img :src="data.image" v-show="data.image != null">
@@ -23,7 +23,7 @@
         <div class="modal-footer">
           <slot name="footer">
             <button class="modal-default-button" @click="uploadFile">
-              Finish
+              Finalizar
             </button>
           </slot>
         </div>

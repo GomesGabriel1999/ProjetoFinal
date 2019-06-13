@@ -4,10 +4,10 @@
             <thead>
                 <tr>
                     <td></td>
-                    <td>Product</td>
-                    <td>Units</td>
-                    <td>Price</td>
-                    <td>Description</td>
+                    <td>Produto</td>
+                    <td>Quantidade</td>
+                    <td>Preço</td>
+                    <td>Descrição</td>
                 </tr>
             </thead>
             <tbody>
@@ -23,7 +23,7 @@
         <modal @close="endEditing" :product="editingItem" v-show="editingItem != null"></modal>
         <modal @close="addProduct"  :product="addingProduct" v-show="addingProduct != null"></modal>
         <br>
-        <button class="btn btn-primary" @click="newProduct">Add New Product</button>
+        <button class="btn btn-primary" @click="newProduct">Adicionar um novo Produto</button>
     </div>
 </template>
 <script>

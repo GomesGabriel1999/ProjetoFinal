@@ -3,8 +3,8 @@
         <div class="container-fluid hero-section d-flex align-content-center justify-content-center flex-wrap ml-auto">
             <h2>
                 <span class="title"><strong>Thank You!</strong></span><br>
-                <span class="medium-text">Your order has been placed.</span><br>
-                <router-link :to="{ name: 'userboard'}" class="small-link">See your orders</router-link>
+                <span class="medium-text">Seu pedido foi realizado!!</span><br>
+                <router-link :to="{ name: 'userboard'}" class="small-link">Veja suas encomendas</router-link>
             </h2>
         </div>
     </div>

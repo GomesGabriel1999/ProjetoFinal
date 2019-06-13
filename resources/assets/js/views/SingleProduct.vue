@@ -7,7 +7,7 @@
                 <p class="text-muted">{{product.description}}</p>
                 <h4>
                     <span class="small-text text-muted float-left">$ {{product.price}}</span>
-                    <span class="small-text float-right">Available Quantity: {{product.units}}</span>
+                    <span class="small-text float-right">Unidades disponiveis: {{product.units}}</span>
                 </h4>
                 <br>
                 <hr>
